@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <Navbar />
-{/* 
+        <Navbar />
+        {/* 
           <Route path="/"></Route>
           <Route path="/about"></Route> */}
       </Router>
