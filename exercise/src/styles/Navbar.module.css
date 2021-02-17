@@ -1,0 +1,21 @@
+.navbar {
+  height: 30px;
+  padding: 10px;
+  border-bottom: 3px solid rgba(255, 99, 71, 0.678);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 10px tomato;
+  background-color: wheat;
+}
+
+.navbar a {
+  width: 100px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: chocolate;
+  transition: 0.3s;
+}
