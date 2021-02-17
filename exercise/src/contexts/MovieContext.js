@@ -31,8 +31,13 @@ const MovieProvider = (props) => {
     },
   ])
 
+  const handleDelete = (movie) =>{
+    setMovies(movies.filter(m => m !== movie))
+  }
+
   const values = {
-    movies
+    movies,
+    handleDelete
   }
 
   return (
