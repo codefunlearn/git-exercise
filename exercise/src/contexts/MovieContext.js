@@ -32,7 +32,7 @@ const MovieProvider = (props) => {
   ])
 
   const handleDelete = (movie) =>{
-    console.log(movie)
+    setMovies(movies.filter(m => m !== movie))
   }
 
   const values = {
