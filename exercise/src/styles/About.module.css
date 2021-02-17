@@ -1,0 +1,12 @@
+.wrapper{
+  padding-top: 40px;
+}
+
+.wrapper p{
+  width: 50%;
+  border: 2px solid grey;
+  box-shadow: 10px 6px 15px 6px grey;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+}
