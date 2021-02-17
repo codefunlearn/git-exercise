@@ -31,12 +31,19 @@ const MovieProvider = (props) => {
     },
   ])
 
+  const handleSubmit = (e, movie, history) =>{
+    e.preventDefault()
+    setMovies([movie, ...movies])
+    history.push('/')
+  }
+
   const handleDelete = (movie) =>{
     setMovies(movies.filter(m => m !== movie))
   }
 
   const values = {
     movies,
+    handleSubmit,
     handleDelete
   }
 
