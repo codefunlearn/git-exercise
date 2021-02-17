@@ -37,9 +37,14 @@ const MovieProvider = (props) => {
     history.push('/')
   }
 
+  const handleDelete = (movie) =>{
+    setMovies(movies.filter(m => m !== movie))
+  }
+
   const values = {
     movies,
     handleSubmit
+    handleDelete
   }
 
   return (
