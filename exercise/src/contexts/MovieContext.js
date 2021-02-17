@@ -31,8 +31,15 @@ const MovieProvider = (props) => {
     },
   ])
 
+  const handleSubmit = (e, movie, history) =>{
+    e.preventDefault()
+    setMovies([movie, ...movies])
+    history.push('/')
+  }
+
   const values = {
-    movies
+    movies,
+    handleSubmit
   }
 
   return (
