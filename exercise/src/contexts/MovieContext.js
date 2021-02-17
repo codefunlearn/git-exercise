@@ -43,7 +43,7 @@ const MovieProvider = (props) => {
 
   const values = {
     movies,
-    handleSubmit
+    handleSubmit,
     handleDelete
   }
 
