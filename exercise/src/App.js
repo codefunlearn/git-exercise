@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
+import MovieProvider from "./contexts/MovieContext";
 import About from "./pages/About";
 import Home from "./pages/Home";
 
@@ -7,9 +8,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
+        <MovieProvider>
+          <Navbar />
+          <Route path="/" component={Home}></Route>
+          <Route path="/about" component={About}></Route>
+        </MovieProvider>
       </Router>
     </div>
   );
