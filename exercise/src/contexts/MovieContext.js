@@ -31,8 +31,13 @@ const MovieProvider = (props) => {
     },
   ])
 
+  const handleDelete = (movie) =>{
+    console.log(movie)
+  }
+
   const values = {
-    movies
+    movies,
+    handleDelete
   }
 
   return (
